@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #d9f4ff;
+}
+
+hr {
+    height: 2px;
+    background-color: aqua;
+}
+
+h1 {
+    text-align: center;
+    color: #42474b;
+    height: 20px;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.wrapper {
+    display: grid;
+    height: 350px;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
+
+.container {
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #000000;
+    margin: 0 auto;
+    padding: auto;
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 2);
+}
+
+.inputArea {
+    background-color: #5b6d7c;
+    grid-column: 1/2;
+    display: block;
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-left: 4px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 4px;
+    font-size: 18px;
+    background-color: rgb(218, 216, 216);
+    text-align: right;
+    border: 2px solid rgb(37, 37, 37);
+    border-radius: 8px;
+}
+
+input[type="text"]:disabled {
+    color: #000000;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #25292c;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.btnr1 {
+    background: #25292c;
+}
+
+.btnr2 {
+    background: #13171d;
+}
+
+.btnr1 > button,
+.btnr2 > button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 100em; 
+    height: 100%;
+    width: 100%;
+}
+
+.btnC > button {
+    color: #ff7a00 !important;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url("new pic.jpg.jpeg") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
